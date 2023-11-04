@@ -12,10 +12,6 @@
     Decorate your churches and ritual rooms with incense to add just a little more pizzaz.
 	</description>
     <modDependencies>
-        <li>
-            <packageId>Ludeon.RimWorld.Ideology</packageId>
-            <displayName>Ideology</displayName>
-          </li>
           <li>
             <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
             <displayName>Vanilla Expanded Framework</displayName>
