@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>MA_IncenseBurner</defName>
+        <label>incense burner</label>
+        <description>A small ash-filled bowl containing lit incense sticks that produce a pleasant floral aroma. Incense is most often found inside of churches or monasteries, as it is thought to rid holy grounds of malevolent spirits.</description>
+        <drawerType>RealtimeOnly</drawerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <building>
+          <isEdifice>false</isEdifice>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
+
+        <thingCategories>
+          <li>BuildingsFurniture</li>
+        </thingCategories>
+        <designationCategory>Furniture</designationCategory>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>4</pathCost>
+        <fillPercent>0.15</fillPercent>
+        
+        <graphicData>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Things/Building/IncenseBurner/IncenseBurner</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2,2)</drawSize>
+          <shadowData>
+            <volume>(0.92, 1 ,0.92)</volume>
+          </shadowData>
+        </graphicData>
+        <size>(1,1)</size>
+        <costList>
+          <WoodLog>5</WoodLog>
+        </costList>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <statBases>
+          <MaxHitPoints>35</MaxHitPoints>
+          <WorkToBuild>2500</WorkToBuild>
+          <Mass>1</Mass>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <placeWorkers>
+          <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <costStuffCount>10</costStuffCount>
+        <stuffCategories>
+          <li>Metallic</li>
+          <li>Stony</li>
+      </stuffCategories>
+      <rotatable>true</rotatable>
+      <specialDisplayRadius>4</specialDisplayRadius> 
+        <comps>
+          <li Class="CompProperties_SpawnEffectersInRoom">
+             <effecter>MA_IncenseBurnerSmoke</effecter>
+             <radius>20</radius>
+         </li>
+         <li Class="CompProperties_SmokeCloudMaker">
+          <sourceStreamEffect>MA_IncenseBurnerSmoke</sourceStreamEffect>
+          <cloudRadius>3</cloudRadius>
+          <fleckScale>4</fleckScale>
+          <cloudFleck>MA_IncenseSmokeCloud</cloudFleck>
+          <fleckSpawnMTB>70</fleckSpawnMTB>
+        </li>
+        <li Class="CompProperties_MeditationFocus">
+          <statDef>MeditationFocusStrength</statDef>
+          <focusTypes>
+            <li>Artistic</li>
+            <li>Natural</li>
+          </focusTypes>
+        </li>
+        </comps>
+      </ThingDef>
+
+      <ThingDef ParentName="BuildingBase">
+        <defName>MA_StandingIncenseBurner</defName>
+        <label>standing incense burner</label>
+        <description>A tall pole topped with an ash-filled bowl containing lit incense sticks that produce a pleasant floral aroma. Incense is most often found inside of churches or monasteries, as it is thought to rid holy grounds of malevolent spirits.</description>
+        <drawerType>RealtimeOnly</drawerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <building>
+          <isEdifice>true</isEdifice>
+        </building>
+        <clearBuildingArea>false</clearBuildingArea>
+
+        <thingCategories>
+          <li>BuildingsFurniture</li>
+        </thingCategories>
+        <designationCategory>Furniture</designationCategory>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>4</pathCost>
+        <fillPercent>0.15</fillPercent>
+        
+        <graphicData>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Things/Building/StandingIncenseBurner/StandingIncenseBurner</texPath>
+          <shaderType>CutoutComplex</shaderType>
+          <drawSize>(2,2)</drawSize>
+          <shadowData>
+            <volume>(0.92, 1 ,0.92)</volume>
+          </shadowData>
+        </graphicData>
+        <size>(1,1)</size>
+        <costList>
+          <WoodLog>5</WoodLog>
+        </costList>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <statBases>
+          <MaxHitPoints>45</MaxHitPoints>
+          <WorkToBuild>2750</WorkToBuild>
+          <Mass>2.2</Mass>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <placeWorkers>
+          <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <costStuffCount>15</costStuffCount>
+        <stuffCategories>
+          <li>Metallic</li>
+          <li>Stony</li>
+      </stuffCategories>
+      <rotatable>true</rotatable>
+      <specialDisplayRadius>4</specialDisplayRadius> 
+        <comps>
+          <li Class="CompProperties_SpawnEffectersInRoom">
+             <effecter>MA_IncenseBurnerSmoke</effecter>
+             <radius>20</radius>
+         </li>
+         <li Class="CompProperties_SmokeCloudMaker">
+          <sourceStreamEffect>MA_StandingIncenseBurnerSmoke</sourceStreamEffect>
+          <cloudRadius>3</cloudRadius>
+          <fleckScale>4</fleckScale>
+          <cloudFleck>MA_IncenseSmokeCloud</cloudFleck>
+          <fleckSpawnMTB>70</fleckSpawnMTB>
+        </li>
+        <li Class="CompProperties_MeditationFocus">
+          <statDef>MeditationFocusStrength</statDef>
+          <focusTypes>
+            <li>Artistic</li>
+            <li>Natural</li>
+          </focusTypes>
+        </li>
+        </comps>
+      </ThingDef>
+
+</Defs>
