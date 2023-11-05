@@ -8,8 +8,7 @@
     </supportedVersions>
 	
 	<packageId>det.epochsincense</packageId>
-	<description>
-    Decorate your churches and ritual rooms with incense to add just a little more pizzaz.
+	<description>Decorate your churches and ritual rooms with incense to add just a little more pizzaz.
 	</description>
     <modDependencies>
           <li>
