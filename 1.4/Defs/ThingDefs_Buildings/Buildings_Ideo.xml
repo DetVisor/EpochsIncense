@@ -76,7 +76,7 @@
 
       <ThingDef ParentName="BuildingBase">
         <defName>MA_StandingIncenseBurner</defName>
-        <label>standing incense burner</label>
+        <label>incense tower</label>
         <description>A tall pole topped with an ash-filled bowl containing lit incense sticks that produce a pleasant floral aroma. Incense is most often found inside of churches or monasteries, as it is thought to rid holy grounds of malevolent spirits.</description>
         <drawerType>RealtimeOnly</drawerType>
         <minifiedDef>MinifiedThing</minifiedDef>
