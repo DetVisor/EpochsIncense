@@ -18,10 +18,6 @@
     <defName>MA_IncenseBurnerSmoke</defName>
     <children>
       <li>
-        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
-        <soundDef>FireBurning</soundDef>
-      </li>
-      <li>
         <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
         <fleckDef>SmokeIncense</fleckDef>
         <spawnLocType>OnSource</spawnLocType>
@@ -38,10 +34,6 @@
   <EffecterDef>
     <defName>MA_StandingIncenseBurnerSmoke</defName>
     <children>
-      <li>
-        <subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
-        <soundDef>FireBurning</soundDef>
-      </li>
       <li>
         <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
         <fleckDef>SmokeIncense</fleckDef>

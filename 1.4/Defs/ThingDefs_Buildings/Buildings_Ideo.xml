@@ -53,6 +53,7 @@
       <rotatable>true</rotatable>
       <specialDisplayRadius>4</specialDisplayRadius> 
         <comps>
+          <li Class="CompProperties_Styleable" />
           <li Class="CompProperties_SpawnEffectersInRoom">
              <effecter>MA_IncenseBurnerSmoke</effecter>
              <radius>20</radius>
@@ -126,6 +127,7 @@
       <rotatable>true</rotatable>
       <specialDisplayRadius>4</specialDisplayRadius> 
         <comps>
+          <li Class="CompProperties_Styleable" />
           <li Class="CompProperties_SpawnEffectersInRoom">
              <effecter>MA_IncenseBurnerSmoke</effecter>
              <radius>20</radius>
